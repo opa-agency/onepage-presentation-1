@@ -1,5 +1,5 @@
 <template>
-  <div>onepage-presentation-1/.git</div>
+  <div>onepage-presentation-1</div>
 </template>
 
 <script setup>
