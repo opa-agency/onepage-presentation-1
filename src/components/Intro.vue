@@ -3,17 +3,17 @@
     <Logo class="inline-block h-8 w-auto" />
   </div>
   <h1 class="mt-14 font-display text-4xl/tight font-light text-white">
-    Open-source Git client <span class="text-sky-300">for macOS minimalists</span>
+    Client Git open-source <span class="text-sky-300">pentru minimalisti macOS</span>
   </h1>
   <p class="mt-4 text-sm/6 text-gray-300">
-    Commit is a lightweight Git client you can open from anywhere any time
-    you're ready to commit your work with a single keyboard shortcut. It's
-    fast, beautiful, and completely unnecessary.
+    Commit este un client Git ușor pe care îl poți deschide de oriunde oricând
+    ești gata să-ți salvezi munca cu o singură comandă rapidă de la tastatură. Este
+    rapid, frumos și complet inutil.
   </p>
   <SignUpForm />
   <div class="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
     <IconLink :icon="BookIcon" class="flex-none">
-      Documentation
+      Documentație
     </IconLink>
     <IconLink :icon="GitHubIcon" class="flex-none">
       GitHub

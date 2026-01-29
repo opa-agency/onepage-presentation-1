@@ -4,7 +4,7 @@
     class="group absolute top-4 right-4 z-50 -m-2.5 p-2.5"
     @click="toggleTheme"
   >
-    <span class="sr-only">Switch to {{ otherTheme }} theme</span>
+    <span class="sr-only">Comută la tema {{ otherTheme === 'dark' ? 'întunecată' : 'luminoasă' }}</span>
     <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 fill-white opacity-50 transition-opacity group-hover:opacity-100 lg:fill-gray-900 lg:dark:fill-white">
       <path
         fill-rule="evenodd"

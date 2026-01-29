@@ -3,60 +3,60 @@
     <Article id="commit-suggestions" date="2023-04-06T00:00Z">
       <img src="/images/commit-suggestions.png" alt="Commit suggestions" class="mb-8 rounded-xl" />
       
-      <h2>Commit message suggestions</h2>
+      <h2>Sugestii de mesaje commit</h2>
       
       <p>
-        In the latest release, I've added support for commit message and description suggestions via an integration with OpenAI. Commit looks at all of your changes, and feeds that into the machine with a bit of prompt-tuning to get back a commit message that does a surprisingly good job at describing the intent of your changes.
+        În ultima versiune, am adăugat suport pentru sugestii de mesaje și descrieri commit printr-o integrare cu OpenAI. Commit analizează toate modificările tale și le trimite către mașină cu puțină ajustare a promptului pentru a obține înapoi un mesaj commit care face o treabă surprinzător de bună în descrierea intenției modificărilor tale.
       </p>
       
       <p>
-        It's also been a pretty helpful way to remind myself what the hell I was working on at the end of the day yesterday when I get back to my computer and realize I didn't commit any of my work.
+        A fost, de asemenea, o modalitate destul de utilă de a-mi aminti la ce naiba lucram la sfârșitul zilei de ieri când mă întorc la computer și îmi dau seama că nu am salvat nimic din munca mea.
       </p>
       
-      <h3><SparkleIcon class="inline-block" /> Improvements</h3>
+      <h3><SparkleIcon class="inline-block" /> Îmbunătățiri</h3>
       
       <ul>
-        <li>Added commit message and description suggestions powered by OpenAI</li>
-        <li>Fixed race condition that could sometimes leave you in a broken rebase state</li>
-        <li>Improved active project detection to try and ignore file changes triggered by the system instead of the user</li>
-        <li>Fixed bug that sometimes reported the wrong number of changed files</li>
+        <li>Adăugate sugestii de mesaje și descrieri commit alimentate de OpenAI</li>
+        <li>Corectată condiția de cursă care ar putea uneori să te lase într-o stare de rebase ruptă</li>
+        <li>Îmbunătățită detectarea proiectului activ pentru a încerca să ignore modificările de fișiere declanșate de sistem în loc de utilizator</li>
+        <li>Corectat bug care uneori raporta numărul greșit de fișiere modificate</li>
       </ul>
     </Article>
 
     <Article id="configuration-files" date="2023-03-17T00:00Z">
       <img src="/images/configuration-files.png" alt="Configuration files" class="mb-8 rounded-xl" />
       
-      <h2>Project configuration files</h2>
+      <h2>Fișiere de configurare proiect</h2>
       
       <p>
-        I've added support for creating per-project <code>.commitrc</code> files that override your global settings for that particular project. Went with YAML for these because personally I'm sick of quoting keys in JSON all the time, or accidentally leaving in a trailing comma.
+        Am adăugat suport pentru crearea de fișiere <code>.commitrc</code> per proiect care suprascriu setările tale globale pentru acel proiect particular. Am mers cu YAML pentru acestea pentru că personal sunt sătul să pun ghilimele la chei în JSON tot timpul sau să las accidental o virgulă la sfârșit.
       </p>
       
-      <h3><SparkleIcon class="inline-block" /> Improvements</h3>
+      <h3><SparkleIcon class="inline-block" /> Îmbunătățiri</h3>
       
       <ul>
-        <li>Added per-project <code>.commitrc</code> configuration files</li>
-        <li>Improved performance when working with projects with large binary files</li>
-        <li>Fixed a bug that could cause Commit to crash when autocommitting after deleting a recently active branch</li>
+        <li>Adăugate fișiere de configurare <code>.commitrc</code> per proiect</li>
+        <li>Îmbunătățită performanța când lucrezi cu proiecte cu fișiere binare mari</li>
+        <li>Corectat un bug care putea cauza blocarea Commit la auto-commit după ștergerea unei ramuri recent active</li>
       </ul>
     </Article>
 
     <Article id="dark-mode" date="2023-03-06T00:00Z">
       <img src="/images/dark-mode.png" alt="Dark mode" class="mb-8 rounded-xl" />
       
-      <h2>Dark mode support</h2>
+      <h2>Suport mod întunecat</h2>
       
       <p>
-        I released this thing last week hoping a couple of people would say "awesome job" and make me feel good about what I'd built but instead I just got a ton of people shaming me on X for being such a horrible person for only shipping a light UI.
+        Am lansat chestia asta săptămâna trecută sperând că câțiva oameni vor spune "treabă grozavă" și mă vor face să mă simt bine cu ceea ce am construit, dar în schimb am primit o grămadă de oameni care mă rușinau pe X pentru că sunt o persoană oribilă pentru că am lansat doar un UI luminos.
       </p>
       
-      <h3><SparkleIcon class="inline-block" /> Improvements</h3>
+      <h3><SparkleIcon class="inline-block" /> Îmbunătățiri</h3>
       
       <ul>
-        <li>Added dark mode support</li>
-        <li>Improved input field responsiveness when writing a commit message in a project with a large number of changed files</li>
-        <li>Made keyboard shortcut for opening the Commit window customizable</li>
-        <li>Deleted my X account</li>
+        <li>Adăugat suport mod întunecat</li>
+        <li>Îmbunătățită reactivitatea câmpului de input când scrii un mesaj commit într-un proiect cu un număr mare de fișiere modificate</li>
+        <li>Făcută personalizabilă comanda rapidă de la tastatură pentru deschiderea ferestrei Commit</li>
+        <li>Șters contul meu de X</li>
       </ul>
     </Article>
 
@@ -66,11 +66,11 @@
       <h2>Commit v0.1.0</h2>
       
       <p>
-        Commit is a command palette-style Git client you can pull up from anywhere with a keyboard shortcut that makes it really easy to commit your work. It uses the "last modified" timestamp of the files in all of your projects to automatically know which project you're in the middle of working on, so any time you pull up the UI it's already got the right project selected — you just have to type your commit message, hit <kbd>Cmd</kbd> + <kbd>Enter</kbd> and your changes are captured.
+        Commit este un client Git în stil paletă de comenzi pe care îl poți deschide de oriunde cu o comandă rapidă de la tastatură care face foarte ușor să-ți salvezi munca. Folosește marca de timp "ultima modificare" a fișierelor din toate proiectele tale pentru a ști automat la ce proiect lucrezi în momentul respectiv, astfel încât oricând deschizi UI-ul, are deja proiectul corect selectat — trebuie doar să scrii mesajul de commit, să apeși <kbd>Cmd</kbd> + <kbd>Enter</kbd> și modificările tale sunt capturate.
       </p>
       
       <p>
-        I'd be lying if I really thought this was that useful but I was looking for an excuse to learn macOS development and here we are. It's open source at least so maybe you can find something interesting in the code even if the app itself is a total waste of hard drive space.
+        Aș minți dacă aș crede cu adevărat că acest lucru este atât de util, dar căutam o scuză să învăț dezvoltare macOS și iată-ne aici. Este open source cel puțin, așa că poate găsești ceva interesant în cod chiar dacă aplicația în sine este o pierdere totală de spațiu pe hard disk.
       </p>
     </Article>
   </Layout>

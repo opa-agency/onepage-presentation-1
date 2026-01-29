@@ -2,7 +2,7 @@
   <div>
     <ThemeToggle class="relative z-10 mt-auto lg:hidden" />
     <p class="flex items-baseline gap-x-2 text-[0.8125rem]/6 text-gray-500">
-      Brought to you by 
+      Realizat de 
       <IconLink href="#" :icon="XIcon" compact>
         Joe Davola
       </IconLink>
